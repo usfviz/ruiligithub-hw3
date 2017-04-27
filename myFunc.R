@@ -1,5 +1,5 @@
 rm(list = ls())
-setwd("~/Google-Drive/0.USF/5.2Visualization/hw/hw3")
+# setwd("~/Google-Drive/0.USF/5.2Visualization/hw/hw3")
 
 if(!require(ggplot2))install.packages("ggplot2",repos="http://cran.rstudio.com/")
 if(!require(tidyr))install.packages("tidyr",repos="http://cran.rstudio.com/")
