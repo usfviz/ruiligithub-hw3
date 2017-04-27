@@ -8,6 +8,7 @@ if(!require(shiny))install.packages("shiny",repos="http://cran.rstudio.com/")
 if(!require(reshape2))install.packages("reshape2",repos="http://cran.rstudio.com/")
 if(!require(lubridate))install.packages("lubridate",repos="http://cran.rstudio.com/")
 if(!require(GGally))install.packages("GGally",repos="http://cran.rstudio.com/")
+if(!require(plotly))install.packages("plotly",repos="http://cran.rstudio.com/")
 
 library(GGally)
 library(ggvis)
@@ -17,6 +18,7 @@ library(plyr)
 library(shiny)
 library(lubridate)
 library(reshape2)
+library(plotly)
 
 
 process_df <- function(df){
