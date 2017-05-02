@@ -176,9 +176,9 @@ server <- function(input, output) {
   #                         < PARALLEL PLOT >  --plotly + GGally                          #
   #########################################################################################
   output$parallel_plot <- renderPlotly({
-    validate(
-      need(length(input$parallel_vars) >= 2, label = "Select at least 2 variables to start plotting")
-    )
+#     validate(
+#       need(length(input$parallel_vars) >= 2, label = "Select at least 2 variables to start plotting")
+#     )
     
     ggparcoord(fb, columns = which(colnames(fb) %in% input$parallel_vars),
                groupColumn = which(colnames(fb) == input$parallel_color),
